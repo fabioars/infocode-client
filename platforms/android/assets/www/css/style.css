@@ -1,0 +1,76 @@
+/* CSS */
+*{
+	font-weight: 100;
+}
+
+/** TIPOGRAFIA **/
+h1{
+	margin-top: 6px;
+	margin-bottom: 6px;
+	padding-left: 11px;
+	padding-right: 11px;
+}
+small{
+	margin-left: 11px;
+	margin-right: 11px;
+}
+a{
+  text-decoration: none;}
+
+.instructions-text{
+    font-size: 1.6rem;
+}
+.truncate {
+  width: 210px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+/** FORMULARIOS **/
+.input-field{
+	padding-left: 11px;
+	padding-right: 11px;
+	padding-top: 8px;
+	padding-bottom: 9px;
+    min-width: 100%;
+	border: 2px rgb(148, 148, 148) solid;
+}
+.card {
+  position:relative;
+  z-index:1;
+  padding:1rem;
+  box-shadow:0 1px 2px #aaa;
+  background:white;
+  margin:0 0.5rem 0.5rem;
+  border-radius: 3px;
+  user-select: none;
+}
+.info-card{
+    text-align:center;
+}
+.info-card :first-child{
+    font-variant:small-caps;
+}
+/* IMAGENS*/
+.responsive-img{
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+/*		Content in Tablet size 			*/
+@media screen and (min-width: 601px) {
+  .container{
+    width: 85%;
+  }
+
+/*		Content in desktop size			*/
+@media screen and (min-width: 993px) {
+  .container{
+    width: 70%;
+  }
+/*		Content in Smartphone size 		*/
+@media screen and (max-width: 600px) {
+  .container{
+    width: 95%;
+  }
+  /**/ }

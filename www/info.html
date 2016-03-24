@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1, maximum-scale=1, user-scalable=no"
+    />
+    <link rel="stylesheet" href="css/projeto.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/pure-grid.css">
+    <title>InfoCode</title>
+</head>
+
+<body id="gestureListener">
+    <header>
+        <h1>InfoCode</h1>
+        <input type="checkbox" id="control-nav" />
+        <label for="control-nav" class="control-nav"></label>
+        <label for="control-nav" class="control-nav-close"></label>
+
+        <nav id="nav-slide">
+            <ul>
+                <li><h3>Recentes<h3></li>
+                <li><a href="#" class="truncate">Convênio 1</a></li>
+                <li><a href="#" class="truncate">Convênio 2</a></li>
+                <li><a href="#" class="truncate">Convênio 3</a></li>
+                <li><a href="#" class="truncate">Convênio 4</a></li>
+                <li><a href="#" class="truncate">Convênio 5</a></li>
+            </ul>
+        </nav>
+</header>
+<article id="allContent">
+    <div class="pure-g">
+        <div class="pure-u-1">
+            <div class="card info-card">
+                <small>Objeto do Convênio</small><br>
+                <span id="objetoConvenio"></span>
+            </div>
+        </div>
+        <div class="pure-u-1">
+            <div class="card info-card">
+                <small>Concedente</small><br>
+                <span id="nomeConcedente"></span>
+            </div>
+        </div>
+        <div class="pure-u-1">
+            <div class="card info-card">
+                <small>Convenente</small><br>
+                <span id="nomeConvenente"></span>
+            </div>
+        </div>
+    </div>
+    <div class="pure-g">
+        <div class="pure-u-1-2">
+            <div class="card info-card">
+                <small id="nomeMunicipio"></small><br>
+                <span id="uf"></span>
+            </div>
+            <div class="card info-card">
+                <small>Número do Convênio</small><br>
+                <span id="numeroConvenio"></span>
+            </div>
+            <div class="card info-card">
+                <small>Valor Convênio</small><br>
+                <span id="valorConvenio"></span>
+            </div>
+            <div class="card info-card">
+                <small>Valor Contrapartida</small><br>
+                <span id="valorContrapartida"></span>
+            </div>
+            <div class="card info-card">
+                <small>Valor Liberado</small><br>
+                <span id="valorLiberado"></span>
+            </div>
+            <div class="card info-card">
+                <small>Valor Última Liberação</small><br>
+                <span id="valorUltimaLiberacao"></span>
+            </div>
+        </div>
+        <div class="pure-u-1-2">
+            <div class="card info-card">
+                <center id="uf-img"></center>
+            </div>
+            <div class="card info-card">
+                <small>Situação</small><br>
+                <span id="situacaoConvenio"></span>
+            </div>
+            <div class="card info-card">
+                <small>Publicação</small><br>
+                <span id="dataPublicacao"></span>
+            </div>
+            
+            <div class="card info-card">
+                <small>Início da Vigência</small><br>
+                <span id="dataInicioVigencia"></span>
+            </div>
+            <div class="card info-card">
+                <small>Fim da Vigência</small><br>
+                <span id="dataFimVigencia"></span>
+            </div>
+            <div class="card info-card">
+                <small>Data Última Liberação</small><br>
+                <span id="dataUltimaLiberacao"></span>
+            </div>
+        </div>
+    </div>
+</article>
+<div class="floatingContainer out">
+    <a href="#" id="startScan">
+        <div class="actionButton">
+            <img class="icone" src="img/qrcode2.png">
+        </div>
+    </a>
+</div>
+<script type="text/javascript" src="cordova.js"></script>
+<script type="text/javascript" src="js/hammer.min.js"></script>
+<script type="text/javascript" src="js/interface.js"></script>
+<script type="text/javascript" src="js/info.js"></script>
+<script type="text/javascript" src="js/scanner.js"></script>
+</body>
+</html>
