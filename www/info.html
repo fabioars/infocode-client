@@ -14,20 +14,16 @@
 <body id="gestureListener">
     <header>
         <h1>InfoCode</h1>
-        <input type="checkbox" id="control-nav" />
+        <!-- <input type="checkbox" id="control-nav" />
         <label for="control-nav" class="control-nav"></label>
         <label for="control-nav" class="control-nav-close"></label>
 
-        <nav id="nav-slide">
+        <nav id="nav-slide"> INDISPONÍVEL NO PROTÓTIPO
             <ul>
                 <li><h3>Recentes<h3></li>
                 <li><a href="#" class="truncate">Convênio 1</a></li>
-                <li><a href="#" class="truncate">Convênio 2</a></li>
-                <li><a href="#" class="truncate">Convênio 3</a></li>
-                <li><a href="#" class="truncate">Convênio 4</a></li>
-                <li><a href="#" class="truncate">Convênio 5</a></li>
             </ul>
-        </nav>
+        </nav> -->
 </header>
 <article id="allContent">
     <div class="pure-g">
@@ -105,10 +101,35 @@
         </div>
     </div>
 </article>
+
+<div id="myModal" class="modal">
+  <div class="modal-content">
+    <span class="close">×</span>
+    <h2>Denunciar</h2>
+    <center>
+    <div class="alert" id="alert-field">
+        <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span> 
+        Denuncia feita com sucesso. Obrigado pela sua contribuição.
+    </div>
+    <form id="denuncia-form" onsubmit="denunciar()">
+        <textarea class="input-field" id="denuncia-texto" placeholder="Digite sua denúncia aqui..."></textarea>
+        <button type="submit" class="denuncia-button">Denunciar</button>
+    </form>
+    </center>
+  </div>
+</div>
+
 <div class="floatingContainer out">
     <a href="#" id="startScan">
         <div class="actionButton">
             <img class="icone" src="img/qrcode2.png">
+        </div>
+    </a>
+</div>
+<div class="floatingContainerLeft out">
+    <a href="#" id="myBtn">
+        <div class="actionButtonRed">
+            <img class="icone" src="img/denuncia.png">
         </div>
     </a>
 </div>

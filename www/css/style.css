@@ -27,18 +27,18 @@ a{
   text-overflow: ellipsis;
 }
 /** FORMULARIOS **/
+textarea.input-field{
+    height: 100px;
+}
 .input-field{
-	padding-left: 11px;
-	padding-right: 11px;
-	padding-top: 8px;
-	padding-bottom: 9px;
+    position: relative;
     min-width: 100%;
 	border: 2px rgb(148, 148, 148) solid;
 }
 .card {
   position:relative;
   z-index:1;
-  padding:1rem;
+  padding: 1rem;
   box-shadow:0 1px 2px #aaa;
   background:white;
   margin:0 0.5rem 0.5rem;
@@ -73,4 +73,5 @@ a{
   .container{
     width: 95%;
   }
-  /**/ }
+  /**/ 
+  }

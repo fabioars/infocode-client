@@ -179,7 +179,6 @@ input#control-nav:checked ~ .control-nav-close{
 }
 
 
-}
 header h1 {
     font-size: 20px;
     line-height: 40px;
@@ -191,6 +190,12 @@ header h1 {
     bottom: .9em;
     position:fixed;
     right: 1em;
+    z-index: 1;
+}
+.floatingContainerLeft {
+    bottom: .9em;
+    position: fixed;
+    left: 1em;
     z-index: 1;
 }
 
@@ -210,7 +215,108 @@ header h1 {
     z-index: 2;
     box-shadow: 0 0 4px rgba(0, 0, 0, 0.14), 0 4px 8px rgba(0, 0, 0, 0.28);
 }
-
+.actionButtonRed{
+    background-color: #d9534f;
+    border-radius: 50%;
+    height: 3.5em;
+    position: relative;
+    width: 3.5em;
+    z-index: 2;
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.14), 0 4px 8px rgba(0, 0, 0, 0.28);
+}
+.denuncia-button{
+    position: relative;
+    background-color: #d9534f;
+    border: none;
+    font-size: 28px;
+    color: #FFFFFF;
+    padding: 20px;
+    width: 200px;
+    text-align: center;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    text-decoration: none;
+    overflow: hidden;
+    cursor: pointer;
+}
+.denuncia-button:after{
+    content: "";
+    background: #e89996;
+    display: block;
+    position: absolute;
+    padding-top: 300%;
+    padding-left: 350%;
+    margin-left: -20px!important;
+    margin-top: -120%;
+    opacity: 0;
+    transition: all 0.8s
+}
+.denuncia-button:active:after{
+    padding: 0;
+    margin: 0;
+    opacity: 1;
+    transition: 0s
+}
+#alert-field{
+    display: none;
+}
+.alert{
+    padding: 20px;
+    background-color: #6ABC6E; /* Red */
+    color: white;
+    margin-bottom: 15px;
+}
+.closebtn {
+    margin-left: 15px;
+    color: white;
+    font-weight: bold;
+    float: right;
+    font-size: 22px;
+    line-height: 20px;
+    cursor: pointer;
+}
+.closebtn:hover {
+    color: black;
+}
 .actionButton.display {
     display: inherit;
+}
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+}
+
+/* The Close Button */
+.close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
 }
