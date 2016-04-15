@@ -50,7 +50,7 @@ function getConvenio(){
                         
         }
     };
-    var url = "http://192.168.0.25/infocode/"+collection+"/"+id;
+    var url = "http://"+server+"/infocode/"+collection+"/"+id;
     xhttp.open("GET", url, true);
     xhttp.send();
 }
@@ -78,7 +78,7 @@ function denunciar(){
         }
         });
 
-        xhr.open("POST", "http://localhost/infocode/denuncia/");
+        xhr.open("POST", "http://"+server+"/infocode/denuncia/");
         xhr.setRequestHeader("content-type", "application/json");
         xhr.send(data);
         
