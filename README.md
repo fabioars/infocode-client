@@ -12,6 +12,12 @@ Ele é um cliente para o [servidor](https://github.com/fsoares1/infocode-server)
 
 ## Configuração
 
+Antes de compilar é preciso alterar o arquivo no diretório
+
+    www/js/config.js
+    
+E lá colocar o IP dor servidor que está rodado.
+
 O QR Code precisa ser do tipo **TEXTO** e seguir o seguinte padrão:
 
     convenio?=idDoConvenio
@@ -21,12 +27,6 @@ O QR Code precisa ser do tipo **TEXTO** e seguir o seguinte padrão:
     convenio?=56eb4b4c32e787800100002a
 
 ### [Servidor](https://github.com/fsoares1/infocode-server)!
-
-Antes de compilar é preciso alterar o arquivo no diretório
-
-    www/js/config.js
-    
-E lá colocar o IP dor servidor que está rodado.
 
 ## GNU GENERAL PUBLIC LICENSE
 
